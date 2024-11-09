@@ -52,9 +52,9 @@ def combat(player_name,enemy_name,player_health,enemy_health,player_weapon_name,
     while player_health > 0 and enemy_health > 0:
         print(f"--- Turn: {turn} ---")
         player_damage = player_turn(player_name, player_weapon_name)
-        player_health -= player_damage
+        enemy_health -= player_damage
         enemy_damage = enemy_turn(enemy_name,enemy_weapon_name)
-        enemy_health -= enemy_damage
+        player_health -= enemy_damage
         turn += 1
         print(f"{player_name:<15}: {player_health:>3} | {enemy_name:<15}: {enemy_health:>3}")
         print("---------------------------------------------------------------------")
