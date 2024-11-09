@@ -7,7 +7,7 @@ print("You are about to embark on a quest for the Holy Grail. Beware of dangerou
 player_name = input("What is your name, brave adventurer?  ")
 player_health = 100
 player_weapon = "Fauxcalibur"
-print(f"Welcome, Sir {player_name} of Pythonia!")
+print(f"Welcome, {player_name} of Pythonia!")
 
 print()
 print()
@@ -16,7 +16,7 @@ print("A Black Knight steps in front of you and says, 'None shall pass!'")
 print("Make a choice:  ")
 print("     1. Battle the knight.")
 print("     2. Explain the complexities of sparrows and coconuts")
-print("     3. You toss your loyal steed, Chauncy, at your foe and then attack!")
+print("     3. You send your loyal servant, Chauncy, at your foe and then attack!")
 choice = input("Input '1','2','3':  ")
 enemy_name,enemy_health,enemy_weapon = "Black Knight",100,"Sword"
 
@@ -50,7 +50,9 @@ while True:
         break
     elif decision.lower() == 'no':
         print("You wisely turn back.")
-        break
+        print("Guess we'll find the Holy Grail next time")
+        print(f"---------------------------Farewell--------------------------")
+        exit()
     elif decision.lower() == 'fight':
         enemy_name,enemy_weapon,enemy_health = "Troll","Club",120
         print("Troll: 'Wait, what are you doing?!'")

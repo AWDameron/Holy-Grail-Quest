@@ -1,7 +1,7 @@
 import random
 
 def player_turn(player_name,player_weapon_name):
-    print(f"{player_name} strikes out with their {player_weapon_name}")
+    print(f"{player_name} strikes out with their {player_weapon_name}.")
     enemy_attack = random.randint(4,10)
     match enemy_attack:
         case 1:
@@ -18,7 +18,7 @@ def player_turn(player_name,player_weapon_name):
 
 
 def enemy_turn(enemy_name,enemy_weapon_name):
-    print(f"{enemy_name} strikes out with their {enemy_weapon_name}")
+    print(f"{enemy_name} strikes out with their {enemy_weapon_name}.")
     enemy_attack = random.randint(4,10)
     match enemy_attack:
         case 1:
